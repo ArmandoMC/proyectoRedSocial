@@ -5,11 +5,13 @@
   background-color: white;
   color: #515365;
   margin-bottom: 20px;
-  border: 1px solid #e6ecf5;
+  border: 1px solid #98b9eb;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .right_row {
-  width: 100%;
-  margin-left: 50%;
+  width: 160%;
+  margin-left: 80%;
 }
 .feed {
   width: 100%;
@@ -101,18 +103,21 @@
   padding-right: 5px;
 }
 .border-radius {
-  border-radius: 6px;
+  border-radius: 0px;
+  height: 420px;
+
 }
 .settings {
   width: 100%;
   /* border-bottom: 5px solid #ff5e3a; */
 }
 .settings_title {
-  padding: 20px;
-  border-bottom: 1px solid #e6ecf5;
+  padding: 10px;
+  border-bottom: 1px solid #98b9eb;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 .settings_title h3 {
   font-size: 0.875rem;
@@ -121,27 +126,26 @@
   width: 100%;
 }
 .settings_content ul {
+  width: 100%;
 }
 .settings_content ul li {
-  border-bottom: 1px solid #e6ecf5;
+  border-bottom: 1px solid #98b9eb;
   display: flex;
   align-items: center;
-  padding-bottom: 10px;
+  padding:8px 0px;
+  width: 80%;
 }
 .settings_content ul li p {
   font-size: 12px;
   color: #515365;
   width: 76%;
-  padding: 20px;
+  padding: 30px;
 }
 .settings_content ul li p b {
-  font-size: 14px;
-  color: #515365;
+  font-size: 12px;
+  color: #646774;
 }
-.settings_content ul li p b {
-  font-size: 14px;
-  color: #515365;
-}
+
 
 @media screen and (max-width: 1200px) {
   .right_row {

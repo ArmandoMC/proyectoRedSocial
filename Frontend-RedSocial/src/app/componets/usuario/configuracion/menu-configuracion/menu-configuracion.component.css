@@ -184,7 +184,7 @@ html, body {background-color: #EDF2F6;font-family: 'Roboto', sans-serif;height:1
 .menusetting_contain ul {}
 .menusetting_contain ul li{padding: 10px;}
 .menusetting_contain ul li a {font-size: 11px;padding: 12px;color: #888da8;}
-.menusetting_contain ul li a:hover {font-size: 11px;color: #1323b3;}
+.menusetting_contain ul li a:hover {font-size: 11px;color: #5dade2;}
 
 /* #settings-select {color: #515365;} */
 

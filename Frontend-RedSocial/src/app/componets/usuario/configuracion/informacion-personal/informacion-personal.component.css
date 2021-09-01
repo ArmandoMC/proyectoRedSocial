@@ -891,19 +891,20 @@ body {
 }
 
 .settings_content form button {
-  border: none;
-color: white;
+  border: 1px solid #5dade2;
+color: #5dade2;
 cursor: pointer;
 border-radius: 3px;
 font-size: 18px;
 font-weight: 700;
 width: 90%;
 height: 50px;
-background-color: #008b1e;
+background-color: white;
 margin-top: 20px;
 }
 .settings_content form button:hover {
-  background-color: #05ac1b;
+  background-color: #5dade2;
+  color: white;
 }
 
 /* FEED PAGE */

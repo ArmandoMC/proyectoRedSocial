@@ -41,7 +41,7 @@ export class ListaAmigosComponent implements OnInit {
     if (amigo == true) {
       return 'Seguir';
     } else {
-      return 'Dejar de Seguir';
+      return 'No seguir';
     }
   }
   verificarBloqueo(amigo: any): string {
@@ -56,7 +56,7 @@ export class ListaAmigosComponent implements OnInit {
   eliminarAmigo(id_amigo: number): void {
     this.amigosService.deleteAmigo(this.usuario.id_usuario, id_amigo).subscribe(
       (res: any) => {
-        alert('Usuario Eliminado');
+        alert('Amigo eliminado');
       }
 
     );
@@ -75,7 +75,7 @@ export class ListaAmigosComponent implements OnInit {
   realizar_bloqueo(id_amigo: any): void {
     this.amigosService.bloquearAmigo(this.usuario.id_usuario, id_amigo).subscribe(
       (res: any) => {
-        alert('Usuario Bloqueado');
+        alert('Amigo bloqueado');
         this.getAmigos(this.usuario.id_usuario);
       }
     );
@@ -85,7 +85,7 @@ export class ListaAmigosComponent implements OnInit {
   desbloquearAmigo(id_amigo: any): void {
     this.amigosService.desbloquearAmigo(this.usuario.id_usuario, id_amigo).subscribe(
       (res: any) => {
-        alert('Usuario Desbloqueado');
+        alert('Amigo desbloqueado');
         this.getAmigos(this.usuario.id_usuario);
       }
     );
@@ -113,7 +113,7 @@ export class ListaAmigosComponent implements OnInit {
   dejar_seguir_amigo(id_amigo: number) {
     this.amigosService.dejarseguirAmigo(this.usuario.id_usuario, id_amigo).subscribe(
       (res: any) => {
-        alert('Has seguido a');
+        alert('Has dejado de seguir a');
         this.getAmigos(this.usuario.id_usuario);
       }
 

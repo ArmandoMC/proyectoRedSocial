@@ -1,18 +1,19 @@
 .contenedor {
   width: 100%;
+  margin-left: 163px;
 }
 .titulo{
   text-align: center;
   width: 100%;
 }
 .row {
-  width: 900px;
+  width: 650px;
   margin-left: 5%;
   display: block;
   background-color: white;
   color: #515365;
   margin-bottom: 20px;
-  border: 1px solid #e6ecf5;
+  border: 1px solid #5dade2;
 }
 /* FRIENDS PAGE */
 .friend {
@@ -29,7 +30,7 @@
   height: 40px;
   width: 40px;
   border-radius: 200px;
-  margin: 0px 10px;
+  margin-left:-400px;
 }
 .friend_title span {
   font-size: 0.875rem;
@@ -43,23 +44,31 @@
   font-size: 0.675rem;
 }
 .friend_title button {
-  border: none;
-  color: white;
-  margin-left: -20px;
+  color: #5dade2;
+  margin-left: 370px; 
   cursor: pointer;
-  border-radius: 3px;
-  width: 70px;
-  height: 30px;
+  border-radius: 0px;
+  width: 110px !important;
+  height: 35px;
+  border:1px solid #5dade2;
 }
+/* .friend_title button :hover{
+  color:white;
+  background-color: #98b9eb;
+} */
 .add-friend {
   background-color: #38a9ff;
 }
 .delete-friend {
-  background-color: #ff5e3a;
+  background-color: white;
+}
+.delete-friend:hover{
+  color:white !important;
+  background-color: #5dade2;
 }
 /* Personalizado */
 .border-radius {
-  border-radius: 6px;
+  border-radius: 0px;
 }
 .border-radius-image {
   border-radius: 200px;

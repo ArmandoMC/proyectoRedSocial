@@ -58,7 +58,7 @@ amigos.delete = async (req, res) => {
     const id_usuario = req.params.id_usuario;
     const response = await conexion.query(`DELETE FROM amigos WHERE id_amigo = ${id} and id_usuario =${id_usuario}`);
     const response1 = await conexion.query(`DELETE FROM amigos WHERE id_amigo = ${id_usuario} and id_usuario =${id}`);
-    res.json(`usuario ${id} Eliminado Satisfactoriamente`)
+    res.json(`usuario ${id} Eliminado con éxito`)
 }
 amigos.getamigos = async (req, res) => {
     const id = req.params.id_usuario;

@@ -49,7 +49,7 @@ mensajes.registro = async (req, res) => {
   );
   const id_mensaje = result.rows[0].max;
   const response = await conexion.query(
-    ` SELECT *from view_mensaje   where view_mensaje.id_mensaje = ${id_mensaje}`
+    ` SELECT *from view_mensaje where view_mensaje.id_mensaje = ${id_mensaje}`
   );
   res.status(200).json(response.rows);
 };
@@ -76,7 +76,7 @@ let query;
   }
   
   await conexion.query(query);
-  res.json("Mensaje Actualizado con exito");
+  res.json("Mensaje actualizado con éxito");
 };
 //Elimina datos de usuario notificacion id
 mensajes.delete = async (req, res) => {
@@ -86,11 +86,11 @@ mensajes.delete = async (req, res) => {
     [id]
   );
   await conexion.query("DELETE FROM mensaje WHERE id_mensaje =$1", [id]);
-  res.json(`Notificacion ${id} Eliminado Satisfactoriamente`);
+  res.json(`Notificacion ${id} Eliminado con éxito`);
 };
 function convertirFecha(fecha) {
   var nFecha = new Date(fecha);
-  let dia = nFecha.getDate();
+  let dia = nFecha.getDay();
   let mes = nFecha.getMonth();
   let anio = nFecha.getFullYear();
   let hora = nFecha.getHours();

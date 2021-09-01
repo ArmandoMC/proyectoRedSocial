@@ -73,37 +73,41 @@ body {
 }
 
 .nombre-chat{
-  background: #f39c12;
-  color:white;
+  /* background: #f39c12; */
+  color:#98b9eb !important;
   font-size: 20px;
   text-align: center;
   width: 100%;
   padding-top: 2%;
-  padding-bottom: 2.3%;
+  padding-bottom: 1%;
   margin-top: 0%;
   margin-bottom: 2%;
+  border-bottom: 1px solid #5dade2;
+  box-sizing: none;
 }
 
 .container-chat {
-    width: 93%;
-    height: 100%;
-    margin-left: 14%;
-    margin-right: 25%;
+    width: 65%;
+    height: 85% !important;
+    margin-left: 35%;
+    margin-right: 0%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .content-users-list {
-    width: 70%;
+    width: 100%;
     height: 79%;
     overflow: auto;
 }
 
 .container-usser-list {
     width: 30%;
-    height: 95.2%;
+    height: 530px;
     box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+    border:1px solid #98b9eb;
+    background-color: white;
 }
 
 .list {
@@ -114,13 +118,15 @@ body {
 
 .content-messages {
     width: 70%;
-    height: 700px;
+    height: 530px;
+    border:1px solid #98b9eb;
+    background-color: white;
 }
 
 .title-chat {
     width: 100%;
-    height: 10%;
-    background:  #e67e22   ;
+    height: 13%;
+    /* background:  #e67e22   ; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -129,6 +135,7 @@ body {
     box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
     font-size: 14px;
     font-weight: bold;
+    border-bottom:1px solid #98b9eb;
 }
 
 .content-img-profile {
@@ -163,7 +170,8 @@ body {
     display: flex;
 }
 .chat{
-  background: url('../../../../assets/chat-img/burbuja.png') no-repeat fixed center;
+  /* background: url('../../../../assets/chat-img/burbuja.png') no-repeat fixed center; */
+  background: #98b9eb;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -234,10 +242,12 @@ body {
 
 .messages {
     width: 100%;
-    height: 71%;
-    padding: 1em 0;
+    height: 66%;
+    padding: 0px 0px;
     overflow: auto;
-    background: url('../../../../assets/chat-img/fondo4.jpg') repeat;
+    background: url('../../../../assets/chat-img/fondow.jpg') repeat;
+    margin-bottom: 0px;
+    box-sizing: none !important;
 }
 
 .item-user {
@@ -249,17 +259,19 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     text-transform: capitalize;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid #5dade2;
     font-size: 14px;
 }
 
 .content-inputs {
     width: 100%;
-    height: 7%;
+    height: 6%;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 -1px 0.5px rgba(0, 0, 0, 0.13);
+    /* box-shadow: 0 -1px 0.5px rgba(0, 0, 0, 0.13); */
     z-index: 90;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .input-message {
@@ -440,6 +452,19 @@ body {
     width: 20px;
     margin-right: 7px;
 }
+@media screen and(min-width: 337px){
+
+    .container-chat{
+        width: 80%;
+        margin-left: 0%;
+        padding-left: 0%;
+    }
+    .container-usser-list{
+        margin-left: 0px;
+    }
+}
+    
+
 
 @keyframes writing {
     25% {

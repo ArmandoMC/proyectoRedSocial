@@ -2,85 +2,91 @@
   <div class="row border-radius">
     <div class="settings shadow">
       <div class="settings_title">
-        <h3>Información Personal de &nbsp; </h3>
-        <h4> {{perfil.nombres_user}} {{perfil.apellidos_user}}</h4>
+        <h3>Información básica &nbsp; </h3>
+        <!-- <h3> {{perfil.nombres_user}} {{perfil.apellidos_user}}</h3> -->
       </div>
       <div class="settings_content">
         <style type="text/css">
           .settings_content ul li p {
-            padding: 5px;
-            padding-left: 20px
+            padding: 0px;
+            padding-left: 5px
           }
         </style>
         <ul>
           <li>
             <p>
-              <b>Username:</b>
+              <b>Nombre de usuario:  </b> 
+              <label>{{perfil.nom_usuario}}</label>              
+
               <br>
-              {{perfil.nom_usuario}}
             </p>
           </li>
           <li>
             <p>
-              <b>Acerca de mi:</b>
+              <b>Acerca de mi:  </b>
+              <label>{{perfil.presentacion}}</label>
               <br>
-              {{perfil.presentacion}}
+              
             </p>
           </li>
-          <li>
+          <!-- <li>
             <p>
               <b>Cumpleaños:</b>
               <br>
               Diciembre 14th, 1995
             </p>
-          </li>
+          </li> -->
           <li>
             <p>
-              <b>Lugar de Nacimiento:</b>
+              <b>Ciudad actual:  </b>
+              <label>Machala</label>
               <br>
-              Machala, EL Oro, Ecuador
+              
             </p>
           </li>
-          <li>
+          <!-- <li>
             <p>
               <b>Vivo en:</b>
               <br>
               Machala, EL Oro, Ecuador
             </p>
-          </li>
-          <li>
+          </li> -->
+          <!-- <li>
             <p>
               <b>Ocupación:</b>
               <br>
               Estudiante
             </p>
-          </li>
-          <li>
+          </li> -->
+          <!-- <li>
             <p>
               <b>Se unió:</b>
               <br>
               April 31st, 2014
             </p>
-          </li>
+          </li> -->
           <li>
             <p>
-              <b>Genero:</b>
+              <b>Género:  </b>
+              <label>Masculino</label>
               <br>
-              Masculino
+              
             </p>
           </li>
           <li>
             <p>
-              <b>Email:</b>
+              <b>Email:               
+              </b>
+              <label>{{perfil.email_user}}</label>
               <br>
-              {{perfil.email_user}}
             </p>
           </li>
-          <li>
+          <li style="border-bottom: 1px solid white;">
             <p>
-              <b>Número Telefonico:</b>
+              <b>Número de teléfono:  </b>
+              <label>{{perfil.telefono}}</label>
               <br>
-              {{perfil.telefono}}
+              
             </p>
           </li>
         </ul>

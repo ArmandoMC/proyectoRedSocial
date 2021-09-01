@@ -27,10 +27,10 @@ usuarios.registro = async(req, res) => {
     const userexist = await conexion.query(usernombre);
     usuarioExistente = userexist.rows[0]
     if (emailExistente) {
-        return res.status(400).send('El correo ingresado esta actualmente en uso.')
+        return res.status(400).send('El correo ingresado esta en uso.')
     }else{
         if(usuarioExistente){
-            return res.status(400).send('El usuario ingresado esta actualmente en uso.')
+            return res.status(400).send('El usuario ingresado esta en uso.')
         }else{
             let query = `INSERT INTO public.usuario(nombres_usuario, apellidos_usuario, fecha_nac_usuario, email_usuario, contrasena_usuario, presentacion_usuario, telefono_usuario, id_genero,nom_usuario) VALUES ('${nombres_user}','${apellidos_user}','${fecha_nac}','${email_user}','${hash}','${presentacion}','${telefono}','${id_genero}','${nom_usuario}')`;
             await conexion.query(query);
@@ -44,11 +44,17 @@ usuarios.registro = async(req, res) => {
 
 //Actualiza datos de Usuario mediante id
 usuarios.update = async (req, res) => {
+
     const id = req.params.id_usuario;
-    const {nombres_user,apellidos_user,fecha_nac,email_user,presentacion,telefono,id_genero,nom_usuario } = req.body;
-    let query = `UPDATE usuario SET nombres_usuario='${nombres_user}', apellidos_usuario='${apellidos_user}', fecha_nac_usuario='${fecha_nac}', email_usuario='${email_user}',presentacion_usuario='${presentacion}', telefono_usuario='${telefono}', id_genero='${id_genero}', nom_usuario= ${nom_usuario} WHERE id_usuario = ${id}`;
+    // const{url} = req.body;
+    //  urli = `${url}/usuarios/${req.file.filename}`;
+    // let salt = bcrypt.genSaltSync(10);
+    // const{contrasena_user} = req.body;
+    //  hash = bcrypt.hashSync(contrasena_user, salt);
+    const {nombres_user,apellidos_user,fecha_nac,email_user,presentacion,telefono,id_genero,nom_usuario} = req.body;
+    let query = `UPDATE usuario SET nombres_usuario='${nombres_user}', apellidos_usuario='${apellidos_user}', fecha_nac_usuario='${fecha_nac}', email_usuario='${email_user}',presentacion_usuario='${presentacion}', telefono_usuario='${telefono}', id_genero='${id_genero}', nom_usuario='${nom_usuario}' WHERE id_usuario = ${id}`;
     await conexion.query(query);
-    res.json('Usuario Actualizado con exito');
+    res.json('Usuario actualizado con éxito');
 }
 
 usuarios.updateContrasena = async(req, res) => {
@@ -58,7 +64,7 @@ usuarios.updateContrasena = async(req, res) => {
     let hash = bcrypt.hashSync(contrasena_user, salt);
     let query = `UPDATE usuario SET contrasena_usuario = '${hash}'WHERE id_usuario = ${id}`;
     await conexion.query(query);
-    res.json('Contraseña Actualizada con exito');
+    res.json('Contraseña actualizada con éxito');
 }
 //Actualiza datos de Usuario mediante id
 usuarios.updateImagen = async (req, res) => {
@@ -68,7 +74,7 @@ usuarios.updateImagen = async (req, res) => {
      let query = `UPDATE usuario SET imagen_usuario = '${urli}' WHERE id_usuario = ${id}`;
      console.log(query);
     await conexion.query(query);
-    res.json('Usuario Actualizado con exito');
+    res.json('Usuario actualizado con éxito');
 }
 usuarios.confirmContrasena = async(req,res) => {
     const id = req.params.id_usuario;
@@ -77,14 +83,14 @@ usuarios.confirmContrasena = async(req,res) => {
     const user = await conexion.query(query);
     if (user.rows == 0) return res.status(401).json({ message: "Usuario no registrado" });
     if (!bcrypt.compareSync(contrasena_usuario, user.rows[0].contrasena_usuario)) return res.status(401).json({ message: "Password erroneo" })
-    res.json('Contraseña Correcta');
+    res.json('Contraseña correcta');
 }
 
 //Elimina datos de usuario mediante id
 usuarios.delete = async (req, res) => {
     const id = req.params.id_usuario;
     const response = await conexion.query('DELETE FROM usuario WHERE id_usuario =$1', [id]);
-    res.json(`usuario ${id} Eliminado Satisfactoriamente`)
+    res.json(`usuario ${id} Eliminado con éxito`)
 }
 
 // Login de ususario con sesiones de Redis
@@ -96,7 +102,7 @@ usuarios.loginUser = async (req, res, next) => {
                 next(('Esto es un error: ' + err));
             }
             if (!usuario) {
-                return res.status(400).send('Usuario o Contraseña no válidos')
+                return res.status(400).send('Usuario o contraseña no válidos')
             }
             req.logIn(usuario, (err) => {
                 if (err) {
@@ -123,7 +129,7 @@ usuarios.Logout = async (req, res) => {
     })
     req.logout();
     console.log('ID Session User TERMINADA: ' + req.sessionID)
-    res.status(200).json('Sesion Terminada');
+    res.status(200).json('Sesion cerrada');
 }
 
 usuarios.authUsuario= async(req,res) => {
