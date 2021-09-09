@@ -1,9 +1,10 @@
 <div class="contenedor">
   <div class="barra_lateral">
-    <h1 class="titulo-registro">Registro de Productos</h1>
+   <h1 class="titulo-registro">Publicar producto</h1>
+    
     <div class="contenido-form">
-      <label class="etiqueta">Producto</label>
-      <input
+      <label class="etiqueta">Nombre</label>
+      <input class="nom" style="width: 275px;"
       [(ngModel)]="producto.nombre_producto"
         class="form-control"
         name="titulo"
@@ -12,18 +13,18 @@
       />
     </div>
     <div class="contenido-form">
-      <label class="etiqueta">Descripcion Producto</label>
-      <textarea
+      <label class="etiqueta">Descripción</label>
+      <textarea style="width: 275px;"
       [(ngModel)]="producto.descripcion_producto"
         class="form-control"
         name="descripcion-producto"
-        cols="30"
+        cols="28"
         rows="2"
       ></textarea>
     </div>
     <div class="contenido-form">
       <label class="etiqueta">Precio</label>
-      <input
+      <input class="pre" style="width: 275px;"
       [(ngModel)]="producto.precio_product"
         class="form-control"
         name="precio"
@@ -32,8 +33,8 @@
       />
     </div>
     <div class="contenido-form">
-      <label class="etiqueta">Categoria</label>
-      <select name="categoria" (change)= "obtenerCategoria($event.target.value)">
+      <label class="etiqueta">Categoría</label>
+      <select name="categoria" (change)= "obtenerCategoria($event.target.value)" style="width: 284px;">
         <option
           *ngFor="let categoria of catalogos"
           [value]="categoria.id_catalogo">
@@ -43,7 +44,7 @@
     </div>
     <div class="contenido-form">
       <label class="etiqueta">Tienda</label>
-      <select name="tienda" (change)="obtenerTienda($event.target.value)">
+      <select name="tienda" (change)="obtenerTienda($event.target.value)" style="width: 245px;">
         <option *ngFor="let tienda of tiendas" [value]="tienda.id_mark">
           {{ tienda.contenido_mark }}
         </option>
@@ -82,13 +83,13 @@
         (change)="onFileChange($event)"
       />
     </div>
-    <button class="btncomp" (click)="guardar()" name="guardar">Guardar</button>
+    <button class="btncomp" (click)="guardar()" name="guardar">Publicar</button>
   </div>
   <div class="contenido">
     <h1 class="titulo-vistap">Vista Previa</h1>
     <div class="contvistap">
-      <h2 class="titulovistpre">{{ producto.nombre_producto }}</h2>
-      <h3 class="precio">${{ producto.precio_product }}</h3>
+      <h4 class="titulovistpre">{{ producto.nombre_producto }}</h4>
+      <h4 class="precio">${{ producto.precio_product }}</h4>
       <img class="imagen-pro" src="{{ image }}" width="200" height="200" />
       <p class="desc">{{producto.descripcion_producto}}</p>
     </div>

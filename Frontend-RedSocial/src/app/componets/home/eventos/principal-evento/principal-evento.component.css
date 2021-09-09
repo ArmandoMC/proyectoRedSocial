@@ -1,48 +1,70 @@
 @charset "utf-8";
 .contenedor {
-    margin-left: 12%;
+    margin-left: 20%;
+	padding-top: 0;
+	width: 500px;
 }
 .vista-previa{
-	width: 153%;
-	margin-left: 70%;
-	padding-left: 2%;
-	border: 1px solid #e6ecf5;
-	padding-top:1%;
+	width: 405px;
+	margin-left: 88%;
+	padding-left: 0%;
+	
+	border: 1px solid #5dade2 !important;
+	padding-top:0%;
+	color:#656968;
+	background-color: white;
+
 }
 .titulo-registro{
-  font-size: 1.5rem;
+  font-size: 18px;
   text-align: center;
+  padding: 7px 0px;
+  margin-bottom: 0;
+  background-color: #5dade2 !important;
 }
 .titulo-registro,
 .titulo-vistap {
-  background: #3f4257;
+  /* background: #3f4257; */
   color: white;
+  
 }
 .titulo-vistap{
-  font-size: 1.5rem;
-  margin-top: 3%;
+  font-size: 18px;
+  margin-top: 0%;
   text-align: center;
+  background-color: #5dade2 !important;
+  padding: 7px 0px;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
 }
 .contenido-form {
-  margin-top: 4%;
-  margin-bottom: 4%;
+  margin-top: 0%;
+  margin-bottom: 0%;
   padding-left: 2%;
   padding-right: 2%;
+  border: 1px solid #5dade2;
+  padding-bottom: 15px;
+  background-color: white;
 }
 .barra_lateral {
-	    float: left;
-   border: 1px solid #e6ecf5;
-	margin-right: 2%;
-	width: 67%;
-	height: 585px;
-	color:#07b891;
+	float: left;
+    /* border: 1px solid #5dade2; */
+	margin-right: 0%;
+	margin-left: 29%;
+	width: 54%;
+	height: 525px;
+	color:#656968;
+	margin-top: 0;
+	padding-top: 0;
+	
 }
 .wraper {
     margin-left: 12%;
-
 }
 .form-control {
 	margin:2%;
+	width: 237px;
 }
 .etiqueta {
 	margin:2%;
@@ -51,13 +73,20 @@
 }
 .encabezado {
 	border: 1px solid #e6ecf5;
-	width: 90%;
-	margin-right: 4%;
-	margin-left: 2%;
+	width: 94%;
+	/* margin-right: 4%; */
+	margin-left: 2.9%;
+	padding-top: 0;
+    margin-top: 0;
+}
+.barra-estado{
+	padding: 0;
 }
 .barra-estado li{
 	display: inline-block;
 	margin-right: 2%;
+	margin-top: 0;
+	padding-top: 0;
 }
 .lista-i{
     margin-left: 10%;
@@ -74,24 +103,34 @@
 }
 .detalle,.lista-invitados{
 	border: 1px solid #e6ecf5;
-	width: 86%;
-	margin-left: 2%;
+	width: 90%;
+	margin-left: 2.9%;
 	margin-top: 2.5%;
 	padding: 2%;
+}
+.detalle p{
+	font-size:14px ;
 }
 .lista-invitados{
     margin-bottom: 2%;
 }
 .btn-crear,.btn{
-	border-radius: 3px;
-	background: #0B173B;
-	border: 1px solid #e6ecf5;
+	border-radius: 0px;
+	background: white !important;
+	border: 1px solid #5dade2;
 	text-align: center;
-	color: white;
+	color: #5dade2 !important;
 	margin-left: 25%;
 	margin-right: 25%;
 	margin-top: 2%;
 	margin-bottom: 2%;
 	height: 30px;
 	font-size: 1.2rem;
+}
+.btn-crear,.btn:hover{
+	color: white;
+	background-color: #5dade2;
+}
+.boton-crear{
+	width: 170px;
 }

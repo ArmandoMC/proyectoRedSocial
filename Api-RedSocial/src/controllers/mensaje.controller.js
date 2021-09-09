@@ -90,7 +90,7 @@ mensajes.delete = async (req, res) => {
 };
 function convertirFecha(fecha) {
   var nFecha = new Date(fecha);
-  let dia = nFecha.getDay();
+  let dia = nFecha.getDate();
   let mes = nFecha.getMonth();
   let anio = nFecha.getFullYear();
   let hora = nFecha.getHours();
@@ -105,7 +105,7 @@ function convertirFecha(fecha) {
       diaCnv = "0" + dia;
     }
   } else {
-    mesCnv = mes + "";
+    mesCnv = mes;
   }
   return (
     anio +

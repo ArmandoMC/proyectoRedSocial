@@ -1,50 +1,69 @@
 .contenedor{
-  margin-left: 21%;
+  margin-left: 10%;
 }
 
 .barra_lateral {
-  border: solid black 1px;
+  border: 1px solid #5dade2;
   float: left;
-  margin-right: 2%;
+  /* margin-right: 10px; */
+  padding:0;
+  width: 320px;
+  margin-left: 75px;
+  background-color: white;
 
 }
-.titulo-registro{
-  font-size: 1.5rem;
-  text-align: center;;
+.titu{
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  border: 1px solid #111;
 }
+
+
+.titulo-registro{
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 5px 0px;
+  margin: 0px 0px 5px 0px;
+
+}
+
 .contenido {
-  width: 250%;
-  margin-left: 130%;
-  height: 400%;
-  border: solid black 1px;
+  width: 450px;
+  margin-left: 420px;
+  height: 300%;
+  border: 1px solid #5dade2;
+  background-color: white;
 }
 .titulo-registro,
 .titulo-vistap {
-  background: #3f4257;
+  background: #5dade2;
   color: white;
 }
 .titulo-vistap {
   text-align: center;
-
+  font-size: 19px;
+  margin: 0;
+  padding: 5px 0px;
 }
 .contenido-form {
   margin-top: 4%;
   margin-bottom: 4%;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 5%;
+  /* padding-right: 2%; */
 }
 .contvistap {
   margin-right: 2%;
   margin-left: 2%;
   margin-bottom: 3%;
-  border-top-style: solid;
+  /* border-top-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
   border-top-color: #003;
   border-right-color: #003;
   border-bottom-color: #003;
-  border-left-color: #003;
+  border-left-color: #003; */
 }
 .form-control {
 	margin:0.5%;
@@ -52,49 +71,71 @@
 .etiqueta {
 	margin:1%;
 	display: block;
-	font-weight: bold;
+	/* font-weight: bold; */
+  color: rgb(65, 60, 60);
 }
 .desc {
   padding-left: 2%;
   text-align: justify;
+  color: rgb(109, 105, 105);
 }
 .titulovistpre,.precio{
   padding-left: 2%;
 }
-
+.titulovistpre{
+  color: rgb(68, 120, 233) !important;
+}
+.precio{
+  font-weight: normal;
+  color: rgb(117, 110, 110);
+}
 .imagen-pro {
-  margin-left: 37%;
-  margin-right: 30%;
+  margin-left: 28%;
+  border: 0;
+  /* margin-right: 30%; */
 }
 .desc{
   padding-right: 2%;
 }
 .btncomp{
   border-radius: 3px;
-	background: #0B173B;
-	border: 1px solid #e6ecf5;
+	background: white !important;
+	/* border: 1px solid #e6ecf5; */
 	text-align: center;
-	color: white;
-	margin-left: 41%;
-	margin-right: 35%;
+	color: #5dade2;
+	margin-left: 31%;
+	/* margin-right: 35%; */
 	margin-top: 2%;
 	margin-bottom: 2%;
-	height: 30px;
+	height: 40px;
 	font-size: 1.2rem;
+  border: 1px solid #5dade2;
+  padding: 3px 4px !important;
+  width: 120px !important;
+}
+.btncomp:hover{
+  background-color: #5dade2 !important;
+  color: white !important;
+  cursor: pointer;
 }
 .btncat,.btntienda{
-  border-radius: 3px;
-	background: #0B173B;
-	border: 1px solid #e6ecf5;
+  border-radius: 20px;
+	background:#5dade2;
+	/* border: 1px solid #e6ecf5; */
 	text-align: center;
 	color: white;
 	margin-left: 2%;
-	margin-right: 15%;
+	/* margin-right: 15%; */
 	margin-top: 2%;
-	margin-bottom: 2%;
+	/* margin-bottom: 2%; */
 	height: 30px;
+  width: 30px;
 	font-size: 1.2rem;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
 }
+
 
 @media (max-width: 768px) {
   .contenido {

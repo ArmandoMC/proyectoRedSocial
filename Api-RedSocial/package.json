@@ -1,7 +1,7 @@
 {
   "name": "redsocial-api",
   "version": "1.0.0",
-  "description": "Red social que permite publicar imagenes realizar compras y mas",
+  "description": "Red social con funcionalidades similares a las de Facebook",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",

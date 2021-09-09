@@ -10,13 +10,37 @@ font-family: "RisollaCalisto";
 src: url("src\assets\font\Risolla Calisto.ttf");
 }
 h1{
-  font-family: 'Courier New', Courier, monospace !important;
-  background-color: #fff;
-
+  background-color: #fff;  
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 32px;
 }
+
 .div_men{
   margin-left: 40px;
   
+}
+.nom{
+  width: 220px !important;
+  margin-right: 10px !important;
+}
+.ape{
+  width: 220px !important;
+
+}
+.usern{
+  width: 220px !important;
+  margin-right: 10px !important;
+}
+.em{
+  width: 220px !important;
+}
+.contra{
+  
+}
+.label{
+  font-size: 12px;
+  color: #868181;
+  background-color: white !important;
 }
 .men{
   font-size: 25px;
@@ -28,6 +52,7 @@ h1{
 }
 .pp{
   background-color: #fff;
+  color: #706c6c !important;
 }
 .img-presentacion{
 float: left;
@@ -45,7 +70,7 @@ float: left;
   margin-right: 2%;
 }
 .registro{
-float: right;
+float: left;
 color: #262626;
 background-color:white;
   color: rgba(var(--i1d,38,38,38),1);
@@ -57,12 +82,14 @@ background-color:white;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-margin-left: 10%;
-margin-right: 10%;
-  margin-top: 2%;
-max-width: 300px;
-border: 0.1rem solid #F2F3F4;
-  border-radius: 4px;
+margin-left: 395px;
+/* margin-right: 5%; */
+  margin-top: 0%;
+max-width: 565px;
+border: 0.1rem solid #e7e7e7;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(160, 159, 159, 0.4);
+  height: 615px;
 }
 .registro h1{
 font-weight: bold;
@@ -105,16 +132,18 @@ color: #8e8e8e;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 64px auto 0;
-  max-width: 935px;
-  padding-bottom: 64px;
+  margin: 0;
+  max-width: 1300px;
+  padding-bottom: 0px;
   width: 100%;
   background-color: #FAFAFA;
 }
 .grupo-formulario{
   background-color: #fff;
+  padding: 0;
 
 }
+
 .grupo-formulario input,select{
 margin-top: 2%;
 width: 100%;
@@ -135,24 +164,28 @@ background: #fafafa;
 padding: 9px 0 7px 8px;
   text-overflow: ellipsis;
 height: 2.5rem;
+display: inline-block;
 }
 
 .grupo-formulario button{
 color: aliceblue;
-background-color: #03970f;
+background-color: #5dade2;
 appearance: button;
 text-align: center;
 border: 0;
 border-radius: 4px;
-margin-right: 2%;
-margin-left: 2%;
+margin-right: 2.6%;
+/* margin-left: 2%; */
 margin-top:3%;
 margin-bottom: 3%;
 width: 100%;
-height: 1.5rem;
+height: 2.5rem;
+font-weight: bold;
+font-size: 17px;
+cursor: pointer;
 }
 .enlace-login{
-  float: right;
+  /* float: right; */
 color: #262626;
 background-color:white;
   color: rgba(var(--i1d,38,38,38),1);
@@ -165,15 +198,16 @@ background-color:white;
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 2%;
-border: 0.1rem solid #F2F3F4;
+/* border: 0.1rem solid #F2F3F4; */
   border-radius: 4px;
 float: left;
-margin-left: 58%;
-margin-right:2%;
+margin-left: 58px;
+margin-right:0%;
 padding-left: 2%;
 padding-right: 4%;
-  border: 0.1rem solid #F2F3F4;
+  /* border: 0.1rem solid #F2F3F4; */
   border-radius: 4px;
+  width: 416px;
 }
 .enlace-login p{
   color: #262626;
@@ -181,6 +215,23 @@ padding-right: 4%;
   font-size: 14px;
   margin: 15px;
   text-align: center;
+}
+.enlace-login p a{
+  /* color: #0d8fe6; */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  /* background-color: white !important; */
+  /* border:  1px solid #721c24; */
+  appearance: button;
+  padding: 10px 10px;
+  background-color: rgb(15, 201, 46) !important;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+.enlace-login p a:hover{
+ 
+  /* text-decoration: underline; */
 }
 .modalContainer {
   display: none;
@@ -236,7 +287,7 @@ padding-right: 4%;
   color: #185586bd;
 }
 
-footer{
+/* footer{
 margin-top: 90%;
 margin-bottom: 3%;
 margin-left: 6%;
@@ -250,7 +301,7 @@ footer ul li {
 margin: 0 .75rem;
 list-style: none;
 font-size: 0.7rem;
-}
+} */
 
 .alert-danger {
   color: #721c24;
