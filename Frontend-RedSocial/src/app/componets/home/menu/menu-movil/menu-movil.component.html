@@ -40,10 +40,10 @@
   <div class="modal-content">
     <span class="close" (click)="cerrarModal('pModal')">×</span>
     <br>
-    <button (click)="publicar()">Publicar</button>
+    <button (click)="publicar()" class="bott">Publicar</button>
     <img src="{{ image }}" id="image-id" class="img-publicacion" alt="" *ngIf="tipoArchivo == 'imagen'">
     <video src="{{ image }}" class="img-publicacion" controls *ngIf="tipoArchivo == 'video'"></video>
-    <div class="ctr-filt" *ngIf="tipoArchivo == 'imagen'">
+    <!-- <div class="ctr-filt" *ngIf="tipoArchivo == 'imagen'">
       <ul class="menu">
         <li><a title="Enlace genérico" (click)="cambiarPestana('f')">Filtros</a></li>
         <li><a title="Enlace genérico" (click)="cambiarPestana('e')">Editar</a></li>
@@ -63,7 +63,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 <div id="publicarMultipleModal" class="modalContainer">
