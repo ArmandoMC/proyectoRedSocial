@@ -324,7 +324,7 @@ export class ReaccionPubComponent implements OnInit {
           (res: any) => {
             let notificacion: Notificacion = {
               id_notif: 0,
-              contenido_notif: "El usuario " + this.usuario.nom_usuario + " ha reaccionado una publicacion",
+              contenido_notif: "El usuario " + this.usuario.nom_usuario + " ha reaccionado a una publicación",
               fecha_hora_notif: new Date(),
               leida_notif:false,
               id_usuario: this.usuario.id_usuario,
@@ -338,7 +338,7 @@ export class ReaccionPubComponent implements OnInit {
           (res: any) => {
             let notificacion: Notificacion = {
               id_notif: 0,
-              contenido_notif: "El usuario " + this.usuario.nom_usuario + " ha reaccionado una publicacion",
+              contenido_notif: "El usuario " + this.usuario.nom_usuario + " ha reaccionado a una publicación",
               fecha_hora_notif: new Date(),
               leida_notif:false,
               id_usuario: this.usuario.id_usuario,
@@ -353,7 +353,7 @@ export class ReaccionPubComponent implements OnInit {
         (res: any) => {
           let notificacion: Notificacion = {
             id_notif: 0,
-            contenido_notif: "El usuario " + this.usuario.nom_usuario + " ha reaccionado una publicacion",
+            contenido_notif: "El usuario " + this.usuario.nom_usuario + " ha reaccionado a una publicación",
             fecha_hora_notif: new Date(),
             leida_notif:false,
             id_usuario: this.usuario.id_usuario,
@@ -379,9 +379,9 @@ export class ReaccionPubComponent implements OnInit {
     // tslint:disable-next-line: variable-name
     const cant_reac = this.Reacciones.filter(Reaccion => Reaccion.id_pub == this.id_pub).length;
     if (cant_reac <= 1) {
-      return ' ' + cant_reac + ' reaccionan';
+      return  ' Me gusta';
     } else {
-      return ' ' + cant_reac + ' reaccionaron';
+      return 'Me gusta';
     }
   }
   public contarRmeGusta()

@@ -22,35 +22,35 @@ amigos.aceptar_amistad = async (req, res) => {
     const id_usuario = req.params.id_usuario;
     let query = `UPDATE amigos SET es_aceptada='true' WHERE id_amigo = ${id} and id_usuario = ${id_usuario}`;
     await conexion.query(query);
-    res.json('Amistad Aceptada con exito');
+    res.json('Amistad aceptada con exito');
 }
 amigos.bloquear_amistad = async (req, res) => {
     const id = req.params.id_amigo;
     const id_usuario = req.params.id_usuario;
     let query = `UPDATE amigos SET es_bloqueado='true' WHERE id_amigo = ${id} and id_usuario = ${id_usuario}`;
     await conexion.query(query);
-    res.json('Amistad Aceptada con exito');
+    res.json('Amistad aceptada con exito');
 }
 amigos.desbloquear_amistad = async (req, res) => {
     const id = req.params.id_amigo;
     const id_usuario = req.params.id_usuario;
     let query = `UPDATE amigos SET es_bloqueado='false' WHERE id_amigo = ${id} and id_usuario = ${id_usuario}`;
     await conexion.query(query);
-    res.json('Amistad Aceptada con exito');
+    res.json('Amistad aceptada con exito');
 }
 amigos.seguir_amigo = async (req, res) => {
     const id = req.params.id_amigo;
     const id_usuario = req.params.id_usuario;
     let query = `UPDATE amigos SET es_seguido='true' WHERE id_amigo = ${id} and id_usuario = ${id_usuario}`;
     await conexion.query(query);
-    res.json('Amistad Aceptada con exito');
+    res.json('Amistad aceptada con exito');
 }
 amigos.dejar_seguir_amigo = async (req, res) => {
     const id = req.params.id_amigo;
     const id_usuario = req.params.id_usuario;
     let query = `UPDATE amigos SET es_seguido='false' WHERE id_amigo = ${id} and id_usuario = ${id_usuario}`;
     await conexion.query(query);
-    res.json('Amistad Aceptada con exito');
+    res.json('Amistad aceptada con exito');
 }
 //Elimina datos de usuario mediante id
 amigos.delete = async (req, res) => {

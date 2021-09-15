@@ -48,7 +48,7 @@ export class MenuMovilComponent implements OnInit {
   // tslint:disable-next-line: variable-name
   event_name = 'publicar';
   event_name_notificar = 'notificar';
-  esMovil = false;
+  esMovil = true;
   tipoArchivo: string;
   tabAct: any;
   filtros = [{ id_filtro: 0, nombre_filtro: 'Clásico', imagen_filtro: '' },

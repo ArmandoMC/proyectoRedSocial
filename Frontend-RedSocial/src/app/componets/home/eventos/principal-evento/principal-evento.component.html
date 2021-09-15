@@ -8,11 +8,11 @@
             <input type="text" class="form-control" name="lugar_evento"  [(ngModel)]="evento.lugar_evento">
             <label class="etiqueta">Fecha y hora de inicio:</label>
             <input type="datetime-local" class="form-control" name="fecha_hora_evento" [(ngModel)]="evento.fecha_hora_evento" >
-            <label class="etiqueta">Fecha y hora de finalización</label>
+            <label class="etiqueta">Fecha y hora de finalización:</label>
             <input type="datetime-local" class="form-control" name="fecha_finalizacion"  [(ngModel)]="evento.fecha_finalizacion">
-            <label class="etiqueta">Selecionar logo</label>
+            <label class="etiqueta">Selecionar logo:</label>
             <input type="file" class="form-control"  (change)="onFileChange($event)"  accept="image/*" >
-            <button class="btn-crear boton-crear" (click)="guardarEvento()">Crear Evento</button>
+            <button class="btn-crear boton-crear" (click)="guardarEvento()">Crear evento</button>
         </form>
     </div>
     <div class="wraper">
@@ -27,19 +27,19 @@
                     </li>
                     <br>
                     <li>
-                        <input class="btn"type="button" value="Asistiré">
+                        <input class="btn b1"type="button" value="Asistiré">
                     </li>
                     <li>
-                        <input class="btn"type="button" value="Tal vez asista">
+                        <input class="btn b2"type="button" value="No asistiré">
                     </li>
                     <li>
-                        <input class="btn"type="button" value="No asistiré">
+                        <input class="btn b3"type="button" value="Tal vez asista">
                     </li>
                 </ul>
             </div>
             <div class="contenido">
                 <div class="detalle">
-                    <h3>Detalle</h3>
+                    <h4>Detalle</h4>
                     <p>1 persona asistirá, incluido {{ usuario.nom_usuario }}</p>
                     <p>Desde el {{formato(evento.fecha_hora_evento)}}</p>
                     <p>hasta el {{formato(evento.fecha_finalizacion)}}</p>
@@ -47,24 +47,24 @@
                     <p><span style="font-weight: bold;">Lugar: </span> {{evento.lugar_evento}}</p>
                 </div>
                 <div class="lista-invitados">
-                    <h3>Lista Invitados</h3>
+                    <h4>Lista Invitados</h4>
                     <ul class="lista-i">
                         <li>
                             <span class="contador">1</span><br>
-                            <span>ASISTIRÁN</span>
+                            <span>Asistirán</span>
                         </li>
                         <li>
                             <span class="contador">0</span><br>
-                            <span>TAL VEZ ASISTAN</span>
+                            <span>Invitados</span>
                         </li>
                         <li>
-                            <span class="contador">1</span><br>
-                            <span>INVITADOS</span>
+                            <span class="contador">0</span><br>
+                            <span>Tal vez asistan</span>
                         </li>
                     </ul>
-                    <hr>
-                    <p>{{ usuario.nom_usuario }}</p>
-                    <p>Organizador</p>
+                    <!-- <hr> -->
+                    <!-- <p>{{ usuario.nom_usuario }}</p>
+                    <p>Organizador</p> -->
                 </div>
             </div>
         </div>

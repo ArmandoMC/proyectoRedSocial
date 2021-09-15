@@ -104,7 +104,7 @@ export class ListaAmigosComponent implements OnInit {
   realizar_seguida_amigo(id_amigo: number) {
     this.amigosService.seguirAmigo(this.usuario.id_usuario, id_amigo).subscribe(
       (res: any) => {
-        alert('Has seguido a');
+        alert('Siguiendo');
         this.getAmigos(this.usuario.id_usuario);
       }
 
@@ -113,7 +113,7 @@ export class ListaAmigosComponent implements OnInit {
   dejar_seguir_amigo(id_amigo: number) {
     this.amigosService.dejarseguirAmigo(this.usuario.id_usuario, id_amigo).subscribe(
       (res: any) => {
-        alert('Has dejado de seguir a');
+        alert('Has dejado de seguir a tu amigo.');
         this.getAmigos(this.usuario.id_usuario);
       }
 

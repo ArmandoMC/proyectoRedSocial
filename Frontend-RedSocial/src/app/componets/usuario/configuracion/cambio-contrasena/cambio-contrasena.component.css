@@ -237,15 +237,16 @@ body {
   color: #ff5e3a;
 }
 .row_contain button {
-  padding: 10px;
+  /* padding: 10px;
   padding-right: 15px;
-  padding-left: 15px;
-  background-color: #38a9ff;
+  padding-left: 15px; */
+  /* background-color: #38a9ff; */
   border: none;
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 25px !important;
+  /* width: 20% !important; */
 }
 .row_contain button:hover {
   background-color: #47bcff;
@@ -728,20 +729,24 @@ body {
 /* SETTINGS PAGE */
 .settings {
   width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   /*border-bottom: 5px solid #ff5e3a;*/
 }
 .settings_title {
   padding: 20px;
   border-bottom: 1px solid #e6ecf5;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   display: flex;
   align-items: center;
+  background-color: #5dade2 !important;
+  color: white;
 }
 .settings_title h3 {
   font-size: 0.875rem;
 }
 .settings_content {
   width: 100%;
+  
 }
 .settings_content ul {
 }
@@ -886,7 +891,7 @@ body {
   font-size: 0.875rem;
 }
 .pi-input-lgg {
-  width: 90%;
+  width: 88%;
 }
 
 .settings_content form button {
@@ -894,12 +899,13 @@ body {
 color: #5dade2;
 cursor: pointer;
 border-radius: 3px;
-font-size: 18px;
+font-size: 17px;
 font-weight: 700;
-width: 90%;
+width: 88%;
 height: 50px;
 background-color: white;
 margin-top: 20px;
+margin-left: 10px;
 }
 .settings_content form button:hover {
   background-color: #5dade2;

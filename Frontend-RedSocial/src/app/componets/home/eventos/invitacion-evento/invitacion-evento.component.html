@@ -1,11 +1,11 @@
-<h2>Eventos Realizados</h2>
+<h4>Eventos Realizados</h4>
 <div class="detalle" *ngFor="let evento of myEventos">
   <h3 (click)="ingresarEvento(evento.id_evento)">{{evento.nombre_evento}}</h3>
   <p>1 persona asistirá, incluido {{evento.nom_usuario}} </p>
   <p>Desde el {{formato(evento.fecha_hora_evento)}}</p>
   <p>hasta el {{formato(evento.fecha_finalizacion)}}</p>
   <p>Organizado por {{evento.nom_usuario}} </p>
-  <p><span style="font-weight: bold;">Lugar: {{evento.lugar_evento}}</span></p>
+  <p><span><b>Lugar:</b> {{evento.lugar_evento}}</span></p>
   <div class="encabezado">
     <ul class="barra-estado">
       <li>
@@ -17,11 +17,12 @@
     <div class="modal-content">
       <span class="close" (click)="cerrarModal()">×</span>
       <br>
-      <h1 class="titulo-modal">Invitar</h1>
-      <h2>{{nombre_evento}}</h2>
+      <h2 class="titulo-modal">Invitación a evento</h2>
+      <h2 class="ev"><b>Evento:</b> {{nombre_evento}}</h2>
+      <label for="" style="color:rgb(41, 121, 212);margin-left: 15px;">Seleccionar amigos</label>
       <ul class="seleccion">
         <li *ngFor="let usuario of usuarios"> {{usuario.nom_usuario}}
-          <button (click)="seleccionarUsuario(usuario.id_usuario)">Seleccionar</button></li>
+          <button (click)="seleccionarUsuario(usuario.id_usuario)" class="bb" style="width:150px">Seleccionar</button></li>
       </ul>
       <ul class="pie_modal">
         <li> <button class="boton-modal" (click)="cerrarModal()">Cancelar</button></li>
@@ -30,7 +31,7 @@
     </div>
   </div>
 </div>
-<h2>Invitaciones a eventos</h2>
+<h4>Invitaciones a eventos</h4>
 <div class="detalle" *ngFor="let evento of eventos">
   <h3 (click)="ingresarEvento(evento.id_evento)">{{evento.nombre_evento}}</h3>
   <p>1 persona asistirá, incluido {{evento.nom_usuario}} </p>

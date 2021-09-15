@@ -12,7 +12,7 @@
         />
       </div>
       <span id="me">
-       Yo
+       Tú
       </span>
     </div>
     <div class="content-users-list">
@@ -73,7 +73,7 @@
         class="input-file"
       />
       <label for="file-message" class="btn-file"
-        ><img src="../../../../assets/chat-img/picture.svg" alt=""
+        ><img src="../../../../assets/chat-img/enviar_imagen.png" alt="" width="20" height="30"
       /></label>
       <input
         type="file"
@@ -83,7 +83,7 @@
         class="input-file"
       />
       <label for="file-attached" class="btn-file"
-        ><img src="../../../../assets/chat-img/fichero.svg" alt=""
+        ><img src="../../../../assets/chat-img/enviar_archivo.png" alt="" width="20" height="30"
       /></label>
       <textarea
         name=""
@@ -91,9 +91,11 @@
         [(ngModel)]="mensaje.mensaje"
         placeholder="Escribe un mensaje..."
         class="input-message"
+        rows="2"
+        cols="1"
       ></textarea>
       <button id="btnSend" class="btn btn-send" (click)="enviar()">
-        <img src="../../../../assets/chat-img/paper-plane.svg" alt="" />
+        <img src="../../../../assets/chat-img/send.png" alt="" />
       </button>
     </div>
   </div>

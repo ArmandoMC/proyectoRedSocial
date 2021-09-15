@@ -110,7 +110,7 @@ export class BuscarUsuarioComponent implements OnInit {
     this.amigosService.saveAmigo(amigo).subscribe(
       (res: any) => {
         this.webService.emit('enviar-solicitud', res);
-        alert('Haz enviado solicitud de amistad');
+        alert('Solicitud de amistad enviada');
       }
     );
   }

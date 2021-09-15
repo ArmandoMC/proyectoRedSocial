@@ -4,9 +4,9 @@
 
 .left_row {width: 100%;position: fixed;}
 .rowfixed {width: 25%;}
-.row {width: 95%;margin: 0px auto;display: block;background-color: white;color: #515365;margin-bottom: 20px;border: 1px solid #e6ecf5;}
-.row_title {padding: 10px;border-bottom: 1px solid #e6ecf5;letter-spacing: 1px;}
-.row_title span {padding: 20px;font-size: .775rem;font-weight: 700;}
+.row {width: 95%;margin: 0px 10px 0px auto;display: block;background-color: white;color: #515365;margin-bottom: 20px;border: 1px solid #5dade2 !important}
+.row_title {padding: 10px;border-bottom: 1px solid #5dade2;letter-spacing: 1px;}
+.row_title span {padding: 20px;font-size: .979rem;font-weight: 700;}
 .row_title a {font-size: .675rem;font-weight: 700;color:#FF5E3A;}
 .row_title a:hover {text-decoration: underline;}
 .row_contain {display: flex;align-items:center;width: 90%;margin: 0px auto;padding-bottom: 10px;padding-top: 10px;margin: 0px auto;}

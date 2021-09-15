@@ -48,7 +48,7 @@ body {
   color: #ff5e3a;
 }
 .shadow {
-  box-shadow: 3px 4px 5px rgba(209, 209, 209, 0.5);
+  box-shadow: 0px 0px 20px rgba(209, 209, 209, 0.5);
 }
 
 /* Nav */
@@ -189,7 +189,7 @@ body {
   width: 90%;
   margin: 0px auto;
   display: block;
-  background-color: #F0FFFF;
+  background-color: white;
   color: #515365;
   margin-bottom: 20px;
   border: 1px solid #e6ecf5;
@@ -760,7 +760,7 @@ body {
 }
 .settings_content ul li p {
   font-size: 11px;
-  color: #1226db;
+  color: #5dade2;
   width: 38%;
   padding: 20px;
 }

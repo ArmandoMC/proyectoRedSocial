@@ -64,12 +64,17 @@ html, body {background-color: #EDF2F6;font-family: 'Roboto', sans-serif;height:1
 .left_row_profile {width: 90%;margin: 0px auto;height: 150px;}
 #portada {width: 100%;height: 150px;position: absolute;}
 .left_row_profile {position: relative;display: flex;}
-.left_row_profile span {padding-top: 100px;padding-left: 10px}
+.left_row_profile span {padding-top: 0px;z-index: 2000;  padding-left: 42px; color: #5dade2 !important;margin-top: 0px !important;text-align: center;padding-bottom: 0;}
 .left_row_profile span p {font-size: 12px}
-#profile_pic {width: 100px;height: 100px;border-radius: 200px;
+#profile_pic {width: 90px;height: 90px;
+  position: absolute;
+  border-radius: 100px;
   /* border: 3px solid #ff5e3a; */
-  margin-top: 40px;}
-
+  top: 55px;
+  left: 96px;}
+.left1{
+  box-shadow: 0 0 20px rgba(209, 209, 209, 0.5);
+}
 /* MENU */
 .rowmenu {
   width: 90%;

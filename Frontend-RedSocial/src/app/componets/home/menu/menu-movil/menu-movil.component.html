@@ -1,10 +1,11 @@
 <div class="mobilemenu">
   <div class="mobilemenu_profile">
-    <img id="mobilemenu_portada" src="/../../../assets/images/img_windows.jpg" />
-    <div class="mobilemenu_profile">
+    <!-- <img id="mobilemenu_portada" src="/../../../assets/images/img_windows.jpg" /> -->
+    <div class="mobilemenu_profile pro1">
       <img id="mobilemenu_profile_pic" *ngIf="usuario.imagen_usuario == ''" src="/../../../assets/images/user.jpg" alt="" /> <br>
       <img id="mobilemenu_profile_pic" *ngIf="usuario.imagen_usuario !== ''"src="{{usuario.imagen_usuario}}" alt="" /> <br>
       <span>{{usuario.nom_usuario}}<br>
+        <hr style="width: 110px; margin-left: 137px;color: rgba(114, 107, 107, 0.6)!important;">
       </span>
     </div>
     <div class="mobilemenu_menu">
@@ -13,7 +14,7 @@
         <li *ngIf="esMovil == true">
           <a class="image-upload">
             <label for="file-input-pub">
-              <img height="40px" src="/../../../assets/img/imagen.png" alt=""
+              <img height="50" width="50" src="/../../../assets/img/publi.png" alt=""
                 >
             </label>
             <input id="file-input-pub" type="file" (change)="onFileChangeP($event)" name="file" multiple
@@ -25,7 +26,7 @@
         <li><a [routerLink]="['chat']"><img height="40px" src="/../../../assets/img/chat_mio.png" alt="">Chats</a></li>
         <li><a [routerLink]="['evento']"><img height="40px" src="/../../../assets/img/eventos_mio.png" alt="">Eventos</a></li>
         <li><a [routerLink]="['marketplace']"><img height="40px" src="/../../../assets/img/market_mio.png" alt="">Marketplace</a></li>
-        <li class="primarymenu"><img src="/../../../assets/img/explode.png" alt=""></li>
+        <!-- <li class="primarymenu"><img src="/../../../assets/img/explode.png" alt=""></li> -->
       </ul>
       <hr>
       <ul>

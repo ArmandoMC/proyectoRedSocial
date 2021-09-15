@@ -2,15 +2,17 @@
 <div class="all">
   <div class="rowfixed"></div>
   <div class="left_row">
-    <div class="left_row_profile">
-      <img id="portada" src="/../../../assets/images/img_windows.jpg" />
+    <div class="left_row_profile left1">
+      <!-- <img id="portada" src="/../../../assets/images/img_windows.jpg" /> -->
       <div class="left_row_profile">
-        <img id="profile_pic" src="/../../../assets/images/usuario_perfil.png" />
         <span>
           <span  class="nom-user">{{usuario.nom_usuario}}</span><br>
           <span class="full-name">{{usuario.nombres_user}} {{usuario.apellidos_user}}</span>
+          <hr style="width: 110px; margin-left: 43px;">
           <p class="followers"></p>
         </span>
+        <img id="profile_pic" src="/../../../assets/images/usuario_perfil.png" />
+        
       </div>
     </div>
     <app-menu-lateral></app-menu-lateral>

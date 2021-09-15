@@ -7,7 +7,7 @@
     
   </div>
   <div class="navbar_menuicon" id="navicon">
-    <img src="/../../../assets/img/barras.png" alt="">
+    <img src="/../../../assets/img/menu_64.png" alt="" width="50" height="50">
   </div>
   <div class="navbar_logo">
     <!-- <img src="/../../../assets/images/mi_icono.png" alt="" /> -->
@@ -15,7 +15,7 @@
   </div>
   <div class="navbar_search">
     <form method="" action="/">
-      <input type="text" placeholder="Buscar personas.." [(ngModel)]="usuarioBuscar" name="buscar"/>
+      <input type="text" placeholder="Buscar..." [(ngModel)]="usuarioBuscar" name="buscar"/>
       <button><img src="/../../../assets/img/buscar.png" alt="" (click)="buscar()"></button>
     </form>
   </div>
@@ -47,8 +47,8 @@
           <li *ngFor="let amigo of solicitudes">
             <a>
               <img  *ngIf="amigo.imagen_usuario" src="{{amigo.imagen_usuario}}" alt="" />
-              <span><b>{{amigo.nom_usuario}}</b><br>1 Amigos en común</span>
-              <button class="modal-content-accept" (click)="aceptar(amigo.id_usuario, amigo.id_amigo)">Aceptar</button><button class="modal-content-decline">Descartar</button>
+              <span><b style="color: #5dade2 !important;">{{amigo.nom_usuario}}</b><br></span>
+              <button class="modal-content-accept" (click)="aceptar(amigo.id_usuario, amigo.id_amigo)">Confirmar</button><button class="modal-content-decline">Eliminar</button>
             </a>
           </li>
         </ul>

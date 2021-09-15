@@ -44,7 +44,7 @@ body {
   color: #ff5e3a;
 }
 .shadow {
-  box-shadow: 3px 4px 5px rgba(209, 209, 209, 0.5);
+  /* box-shadow: 3px 4px 5px rgba(209, 209, 209, 0.5); */
 }
 
 /* Nav */
@@ -188,7 +188,8 @@ body {
   background-color: white;
   color: #515365;
   margin-bottom: 20px;
-  border: 1px solid #e6ecf5;
+  border: 1px solid #5dade2;
+  height: 450px;
 }
 .row_title {
   padding: 10px;
@@ -736,6 +737,8 @@ body {
   letter-spacing: 1px;
   display: flex;
   align-items: center;
+  background-color: #5dade2 !important;
+  color: white !important;
 }
 .settings_title h3 {
   font-size: 0.875rem;
@@ -743,6 +746,7 @@ body {
 .settings_content {
   width: 100%;
   height: 440px;
+  
 }
 .settings_content ul {
 }
@@ -887,9 +891,11 @@ body {
   font-size: 0.875rem;
 }
 .pi-input-lgg {
-  width: 90%;
+  width: 42%;
 }
+.settings_content{
 
+}
 .settings_content form button {
   border: 1px solid #5dade2;
 color: #5dade2;
@@ -897,10 +903,11 @@ cursor: pointer;
 border-radius: 3px;
 font-size: 18px;
 font-weight: 700;
-width: 90%;
+width: 88%;
 height: 50px;
 background-color: white;
 margin-top: 20px;
+margin-left: 10px;
 }
 .settings_content form button:hover {
   background-color: #5dade2;

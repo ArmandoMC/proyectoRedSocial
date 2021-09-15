@@ -23,7 +23,7 @@ html, body {background-color: #EDF2F6;font-family: 'Roboto', sans-serif;height:1
 /* Nav */
 .sup{
   width: 100%;
-  background-color: #2ccf76;
+  background-color: #2f64d6;
   position: fixed;
   top:0px;
   height: 12px;
@@ -171,6 +171,9 @@ html, body {background-color: #EDF2F6;font-family: 'Roboto', sans-serif;height:1
   width: 218px;background-color: white;
   border: 1px solid #076abb;
 }
+.contenido_perfil ul li:hover{
+  background-color: #f0f0f0 !important;
+}
 .contenido_amigos{
   width: 342px;background-color: white;
   border: 1px solid #076abb;
@@ -182,12 +185,13 @@ html, body {background-color: #EDF2F6;font-family: 'Roboto', sans-serif;height:1
 .modal-content i {color: #9a9fbf;}
 .modal-content ul li a span b {font-size: 14px;color: rgb(14, 101, 151);}
 .modal-content ul li a span p {font-size: 9px;color: #515365;}
-.modal-content ul li a:hover {background-color: #EDF2F6;}
-.modal-content ul li button {padding: 5px 10px;border:none;color:white;cursor: pointer;border-radius: 3px;margin-left: 10px;font-size: 10px;font-weight: 700;}
-.modal-content-accept:hover {background-color: #38A9FF;}
-.modal-content-decline:hover {background-color: #FF5E3A;}
-.modal-content-accept {background-color: #47BCFF;}
-.modal-content-decline {background-color: #e6ecf5;}
+/* .modal-content ul li a:hover {background-color: #EDF2F6;} */
+.modal-content-accept {background-color: white !important; color:#5dade2 !important;border: 1px solid #5dade2 !important;}
+.modal-content-decline {background-color: white !important;color: #5dade2 !important;border: 1px solid #5dade2 !important;}
+.modal-content ul li button {padding: 5px 10px;color:white;cursor: pointer;border-radius: 3px;margin-left: 10px;font-size: 11px;font-weight: 700;}
+.modal-content-accept:hover {background-color: #5dade2 !important;color: white !important;}
+.modal-content-decline:hover {background-color: #5dade2 !important; color: white !important;}
+
 
 
 
@@ -314,7 +318,8 @@ html, body {background-color: #EDF2F6;font-family: 'Roboto', sans-serif;height:1
 .navbar_search {display: none;}
 .navbar_icons {display: none;}
 .navbar_user {display: none;}
-.navbar_menuicon {display: inline;width: 20%;height: 50px;line-height: 2.3;text-align: center;font-size: 20px;background-color: #121529;color:white;cursor: pointer;}
+.navbar_menuicon {display: inline;width: 20%;height: 50px;line-height: 2.3;text-align: center;
+  font-size: 20px;background-color:white;color:white;cursor: pointer;}
 .all {display: block;width: 100%;}
 .left_row {display: none;}
 .right_row {width: 100%;margin: 0px auto;}
